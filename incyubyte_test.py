@@ -12,7 +12,7 @@ def add():
 		if i.isnumeric():
 			int_num = int(i)
 
-			if int_num < 1000:
+			if int_num < 1001:
 				addition += int_num
 		
 		elif i.isalpha() :
