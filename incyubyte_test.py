@@ -2,10 +2,11 @@ def add():
 
 	user_input = input("Enter Numbers: ")
 	user_in_list = user_input.split(',')
-	print(user_in_list)
+	
 	addition = 0
 	addition_char = 0
 	val_sum = 0
+
 	for i in user_in_list:
 
 		if i.isdigit():
