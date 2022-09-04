@@ -7,14 +7,14 @@ def add():
 	val_sum = 0
 	for i in user_in_list:
 
-			if i.isnumeric():
-				addition += int(i)
+		if i.isnumeric():
+			addition += int(i)
 
-			else:
-				val = ord(i)
-				val_num = val - 96
-				val_sum += val_num
-				addition_char = addition + val_sum
+		else:
+			val = ord(i)
+			val_num = val - 96
+			val_sum += val_num
+			addition_char = addition + val_sum
 	
 	print(addition_char)
 
