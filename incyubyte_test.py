@@ -9,16 +9,19 @@ def add():
 
 	for i in user_in_list:
 
-		if i.isdigit():
+		if i.isnumeric():
 			int_num = int(i)
 
 			if int_num < 1000:
 				addition += int_num
-
-		else :
+		
+		elif i.isalpha() :
 			val = ord(i)
 			val_num = val - 96
 			val_sum += val_num
+
+		else :
+			raise TypeError(f"Negatives not Allowed {i}")
 
 		addition_char = addition + val_sum
 
